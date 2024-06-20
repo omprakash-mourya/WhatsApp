@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.WhatsApp" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPressedHighlight">@color/ripple_color</item>
+        <item name="android:colorActivatedHighlight">@color/ripple_color</item>
+        <item name="android:colorControlHighlight">@color/ripple_color</item>
+        <item name="android:colorControlActivated">@color/ripple_color</item>
+        <item name="android:colorFocusedHighlight">@color/ripple_color</item>
+        <item name="android:colorPrimary">@color/ripple_color</item>
+        <item name="android:colorPrimaryDark">@color/ripple_color</item>
+        <item name="android:shadowColor">@color/ripple_color</item>
+        <item name="android:animateOnClick">@color/ripple_color</item>
+        <item name="android:colorLongPressedHighlight">@color/ripple_color</item>
+    </style>
+
+    <style name="Theme.WhatsApp.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <!-- Radius of the outer bound of widgets to make the rounded corners -->
+        <item name="appWidgetRadius">16dp</item>
+        <!--
+        Radius of the inner view's bound of widgets to make the rounded corners.
+        It needs to be 8dp or less than the value of appWidgetRadius
+        -->
+        <item name="appWidgetInnerRadius">8dp</item>
+    </style>
+
+    <style name="Theme.WhatsApp.AppWidgetContainer" parent="Theme.WhatsApp.AppWidgetContainerParent">
+        <!-- Apply padding to avoid the content of the widget colliding with the rounded corners -->
+        <item name="appWidgetPadding">16dp</item>
+    </style>
+</resources>
